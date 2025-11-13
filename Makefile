@@ -306,32 +306,6 @@ clean-all: clean clean-output
 	@echo ""
 
 # ==============================================================================
-# INSTALLATION (Optional - requires sudo)
-# ==============================================================================
-
-# Install to /usr/local/bin
-install: bin/nbody bin/analyze_trails bin/plot_trails
-	@echo ""
-	@echo "Installing to /usr/local/bin..."
-	@echo "(This requires sudo privileges)"
-	@echo ""
-	sudo install -m 755 bin/nbody /usr/local/bin/
-	sudo install -m 755 bin/analyze_trails /usr/local/bin/
-	sudo install -m 755 bin/plot_trails /usr/local/bin/
-	@echo "✓ Installation complete"
-	@echo ""
-
-# Uninstall from system
-uninstall:
-	@echo ""
-	@echo "Uninstalling from /usr/local/bin..."
-	sudo rm -f /usr/local/bin/nbody
-	sudo rm -f /usr/local/bin/analyze_trails
-	sudo rm -f /usr/local/bin/plot_trails
-	@echo "✓ Uninstall complete"
-	@echo ""
-
-# ==============================================================================
 # UTILITY TARGETS
 # ==============================================================================
 

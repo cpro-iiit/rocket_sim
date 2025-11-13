@@ -1,0 +1,7 @@
+# Simulation Configuration
+dt=0.01
+steps=5000
+frames=100
+save_interval=50
+g=1.0
+
